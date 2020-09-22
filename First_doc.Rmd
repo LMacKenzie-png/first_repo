@@ -1,0 +1,19 @@
+---
+title: "First_doc"
+author: "Laura MacKenzie"
+date: "22/09/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r plot, include=TRUE}
+data(cars)
+attach(cars)
+str(cars)
+plot(speed~dist)
+```
